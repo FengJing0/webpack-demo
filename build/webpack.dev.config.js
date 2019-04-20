@@ -1,14 +1,23 @@
 const webapck = require('webpack')
+const path = require('path')
 
 const devConfig = {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: "./dist",
+    contentBase: path.join(__dirname, 'dist'),
     open: true,
     port: 8090,
     hot: true,
+    host: 'localhost',
     // hotOnly: true
+    proxy: {
+      "/api/*": {
+        target: "http://api.douban.com",
+        secure: false,
+        changeOrigin: true
+      }
+    }
   },
   module: {
     rules: [

@@ -52,10 +52,7 @@ const commonComfig = {
     usedExports: true,
     splitChunks: {
       chunks: 'all'
-    }
-  },
-  optimization: {
-    usedExports: true
+    },
   },
   output: {
     path: path.resolve(__dirname, '../dist')

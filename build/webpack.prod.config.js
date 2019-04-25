@@ -31,16 +31,16 @@ const prodConfig = {
     ]
   },
   optimization: {
-    minimizer:[new OptimizeCssAssetsWebpackPlugin({})]
+    minimizer:[new OptimizeCssAssetsWebpackPlugin({})]// css压缩
   },
   plugins: [
-    new MiniCssExtractPlugin({
+    new MiniCssExtractPlugin({ // 将css抽离单独文件
       filename: '[name].css',
       chunkFilename: '[name].chunk.css'
     })
   ],
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].[contenthash].js',// 加hash避免浏览器缓存
     chunkFilename: '[name].[contenthash].chunk.js'
   }
 }

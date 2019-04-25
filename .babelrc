@@ -1,12 +1,15 @@
-{
-  "presets": [["@babel/preset-env", {
-    "targets": {
-      "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-    },
-    "useBuiltIns": "usage"
-  }]],
+  {
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      },
+      "useBuiltIns": "usage"
+    }],
+    "@babel/preset-react"
+  ],
   "plugins": [
-    "@babel/plugin-syntax-dynamic-import"
+    "@babel/plugin-syntax-dynamic-import" //babel异步加载
     // ["@babel/plugin-transform-runtime",{
     //   "corejs":2,
     //   "helpers":true,

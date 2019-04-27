@@ -4,7 +4,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <div>This is Index Page</div>
+                <div>This is List Page</div>
             </div>
         )
     }

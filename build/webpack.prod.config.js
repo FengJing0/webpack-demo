@@ -41,7 +41,8 @@ const prodConfig = {
   ],
   output: {
     filename: '[name].[contenthash].js',// 加hash避免浏览器缓存
-    chunkFilename: '[name].[contenthash].chunk.js'
+    chunkFilename: '[name].[contenthash].chunk.js',
+    publicPath: './'
   }
 }
 

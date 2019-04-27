@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
+console.log('detail')
 class App extends Component {
     render() {
         return (
             <div>
-                <div>This is Index Page</div>
+                <div>This is Detail Page</div>
             </div>
         )
     }

@@ -68,7 +68,8 @@ const devConfig = {
     },
     output: {
         filename: '[name].js',
-        chunkFilename: '[name].chunk.js'
+        chunkFilename: '[name].chunk.js',
+        publicPath: '/'
     }
 
 }

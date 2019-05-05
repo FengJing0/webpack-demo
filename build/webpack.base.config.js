@@ -27,12 +27,12 @@ const makePlugins = (configs) => {
     const files = fs.readdirSync(path.resolve(__dirname, '../dll'));
     files.forEach(file => {
       if(/.*\.dll.js/.test(file)) {
-        plugins.push(new AddAssetHtmlWebpackPlugin({
+        plugins.push(new AddAssetHtmlWebpackPlugin({//html添加静态资源插件
           filepath: path.resolve(__dirname, '../dll', file)
         }))
       }
       if(/.*\.manifest.json/.test(file)) {
-        plugins.push(new webpack.DllReferencePlugin({
+        plugins.push(new webpack.DllReferencePlugin({//dll映射插件
           manifest: path.resolve(__dirname, '../dll', file)
         }))
       }

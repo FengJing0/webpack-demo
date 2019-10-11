@@ -11,15 +11,16 @@
 // getComponent().then(element => {
 //   document.body.appendChild(element)
 // })
-import '@/index.css'
+// import '@/index.css'
 
+import createAvatar from './creatAvatar'
+createAvatar()
 
-
-fetch('/v2/movie/demo').then((data)=>{
-  return data.json()
-}).then((json)=>{
-  console.log(json)
-})
+// fetch('/v2/movie/demo').then((data)=>{
+//   return data.json()
+// }).then((json)=>{
+//   console.log(json)
+// })
 
 // fetch('/react/api/demo.json').then((data)=>{
 //   return data.json()
